@@ -9,9 +9,10 @@ body {
     align-items: center; /* Centra verticalmente los elementos */
     margin: 20px; /* Elimina cualquier margen dentro del contenedor */
     padding: 20px; /* Espacio interno alrededor del container del contenedor */
-    background-color: #f0f0f0; /* Fondo gris claro */
+    background-color: #690e80; /* Fondo gris claro */
     border-radius: 10px; /* Borde redondeado */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 42px;
 }
 
 /* Estilos para la imagen */
@@ -19,7 +20,7 @@ body {
     max-width: 100px; /* Ajusta el ancho máximo de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 10px; /* Borde redondeado de 10 píxeles */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    box-shadow: 0 0 10px rgb(143, 87, 131); /* Sombra */
     margin-right: 20px; /* Espacio a la derecha de la imagen */
     margin-left: 20px;
     margin-top: 20px;
@@ -46,7 +47,7 @@ body {
 
 /* Estilos para los contenedores .SonArticle dentro del contenedor padre */
 .Article .SonArticle {
-    max-width: 500px; /* Ajusta el ancho máximo según tus necesidades */
+    max-width: 620px; /* Ajusta el ancho máximo según tus necesidades */
     background-color: #ffffff; /* Fondo blanco */
     border-radius: 10px; /* Borde redondeado */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
@@ -129,26 +130,37 @@ body {
     padding: 10px;
     position: absolute;
     top: 0;
-    left: 818px;
-    right: 140px;
-    bottom: 100px;
+    margin-top: 240px;
+    left: 740px;
+    right: 30px;
     max-width: none;
-    text-align: center;
+    text-align: justify;
+    word-wrap: none;
+    background-color: #6d6a67; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra  */
 }
+
 
 /* Estilos para los títulos dentro del Sub-Inf */
 .Sub-Inf h2 {
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
+    color: #4b137d;
 }
 
 /* Estilos para el contenedor de "Información sobre mí" (formato original) */
 .acerca-de {
-    margin-top: 250px;
+    margin-top: 20px; /* Reduce el margen superior */
     margin-bottom: 20px;
     overflow: hidden;
     max-width: none;
+    margin-left: 20px;
+    background-color: #fffafa; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra  */
+    padding: 20px; /* Espacio interno */
 }
 
 /* Estilos para el container de texto dentro de ".acerca-de" (formato original) */
@@ -160,11 +172,16 @@ body {
 /* Estilos para el contenedor de "Suscríbete" (formato original) */
 .suscribe {
     margin-bottom: 20px;
+    background-color: #fffafa; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra  */
+    padding: 20px; /* Espacio interno */
+    margin-left: 20px;
 }
 
 /* Estilos para el textbox dentro de "Suscríbete" (formato original) */
 .suscribe input[type="text"] {
-    width: 100%;
+    width: 95%;
     padding: 5px;
 }
 
@@ -175,8 +192,10 @@ body {
     border: none;
     padding: 10px 20px;
     margin-top: 10px;
+    margin-left: 85px;
+    margin-right: 85px;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
 }
 
 /* Cambiar el estilo del botón al pasar el mouse sobre él (formato original) */
@@ -189,12 +208,11 @@ body {
     text-align: center;
     background-color: #6a1b9a;
     color: white;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
     width: 100%;
     height: 50px;
     padding-top: 5px;
 }
-
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -243,12 +261,13 @@ body {
 
     .Sub-Inf {
         display: flex;
-        justify-content: space-between;
+        text-align: justify;
         align-items: center;
         position: static;
         margin-bottom: 10px;
         max-width: none;
-        order: 1;
+        word-wrap: none;
+        margin-top: 20px;
     }
 
     .Sub-Inf h2 {
@@ -266,7 +285,7 @@ body {
 
     .acerca-de p, .suscribe input[type="text"] {
         text-align: left;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .suscribe button {
@@ -343,9 +362,10 @@ body {
     
         .Sub-Inf {
             position: static;
-            margin: 20px auto;
+            margin: 20px;
             max-width: none;
-            order: 1;
+            word-wrap: none;
+
         }
     
         .acerca-de {
@@ -354,7 +374,7 @@ body {
         }
     
         .suscribe input[type="text"] {
-            width: 100%;
+            width: 90%;
         }
     
         .bottomContainer {
