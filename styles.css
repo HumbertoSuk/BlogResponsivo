@@ -1,0 +1,378 @@
+/* Aplica márgenes personalizados */
+body {
+    margin-top: 50px; /* Margen superior */
+    margin-right: 100px; /* Margen derecho */
+    margin-bottom: 40px; /* Margen inferior */
+    margin-left: 100px; /* Margen izquierdo */
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
+}
+
+/* Estilos para el contenedor principal */
+.contenido {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: 20px; /* Elimina cualquier margen dentro del contenedor */
+    padding: 20px; /* Espacio interno alrededor del contenido del contenedor */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para la imagen */
+.contenido img {
+    max-width: 100px; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Borde redondeado de 10 píxeles */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos para la etiqueta de texto */
+.contenido .texto h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    color: #6a1b9a; /* Lila */
+    margin: 0; /* Elimina el margen del texto para alinear a la izquierda */
+    font-family: "Times New Roman", serif; /* Cambiar la fuente a Times New Roman */
+}
+
+/* Estilos para el contenedor padre de los enlaces */
+.contenedor-padre-links {
+    display: flex;
+    flex-direction: column; /* Dirección de flexión en columna */
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los contenedores .containerlinks dentro del contenedor padre */
+.contenedor-padre-links .containerlinks {
+    max-width: 500px; /* Ajusta el ancho máximo según tus necesidades */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio entre los contenedores */
+    padding: 20px; /* Espacio interno */
+    transition: transform 0.2s ease-in-out; /* Agrega una animación de transformación */
+}
+
+/* Agregar una animación de escala al pasar el mouse sobre los contenedores de enlaces */
+.contenedor-padre-links .containerlinks:hover {
+    transform: scale(1.05); /* Escala un 5% más grande al pasar el mouse */
+}
+
+/*----------------------------*/
+
+/* Estilos para el contenedor padre */
+.contenedor-padre {
+    display: flex; /* Utiliza flexbox para alinear los contenedores en una fila */
+    justify-content: space-between; /* Espacio entre los contenedores */
+    margin-left: 60px; /* Margen izquierdo */
+    margin-right: 60px; /* Margen derecho */
+    margin-bottom: 20px; /* Margen inferior */
+    margin-top: 40;
+    clear: both; /* Evita solapamiento de elementos flotantes */
+    text-align: center; /* Centra todo el contenido horizontalmente */
+}
+
+/* Estilos para el contenedor izquierdo */
+.contenedor-izquierda {
+    flex: 1; /* Expande el contenedor para ocupar el espacio disponible */
+    padding: 10px; /* Espacio interno alrededor del contenido */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor central */
+.contenedor-centro {
+    flex: 1; /* Expande el contenedor para ocupar el espacio disponible */
+    padding: 10px; /* Espacio interno alrededor del contenido */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor derecho */
+.contenedor-derecha {
+    flex: 1; /* Expande el contenedor para ocupar el espacio disponible */
+    padding: 10px; /* Espacio interno alrededor del contenido */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/*ETIQUETA PARA CENTRAR <H1></H1> DENTRO DEL CONTENEDOR PADRE*/
+/* Estilos para centrar el contenido de las etiquetas h1 dentro de los contenedores */
+.contenedor-izquierda h2,
+.contenedor-centro h2,
+.contenedor-derecha h2 {
+    text-align: center;
+}
+
+/* Estilos para el contenido de texto dentro de ".info-mi" */
+.contenedor-izquierda p,
+.contenedor-centro p,
+.contenedor-derecha p {
+    text-align: center;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+/* Estilos para el contenedor de información a la derecha (formato original) */
+.contenedorInfo {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 818px;
+    right: 140px;
+    bottom: 100px;
+    max-width: none;
+    text-align: center;
+}
+
+/* Estilos para los títulos dentro del contenedorInfo */
+.contenedorInfo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de "Información sobre mí" (formato original) */
+.info-mi {
+    margin-top: 250px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    max-width: none;
+}
+
+/* Estilos para el contenido de texto dentro de ".info-mi" (formato original) */
+.info-mi p {
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Estilos para el contenedor de "Suscríbete" (formato original) */
+.suscribete {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el textbox dentro de "Suscríbete" (formato original) */
+.suscribete input[type="text"] {
+    width: 100%;
+    padding: 5px;
+}
+
+/* Estilos para el botón dentro de ".suscribete" (formato original) */
+.suscribete button {
+    background-color: #6a1b9a; /* Lila */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Cambiar el estilo del botón al pasar el mouse sobre él (formato original) */
+.suscribete button:hover {
+    background-color: #4b137d; /* Lila más oscuro al pasar el mouse */
+}
+
+/* Estilos para el pie de página */
+.pie-de-pagina {
+    text-align: center;
+    background-color: #6a1b9a;
+    color: white;
+    font-family: "Arial", sans-serif; /* Cambiar la fuente a Arial */
+    width: 100%;
+    height: 50px;
+    padding-top: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6A0572;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #16103A;
+}
+
+
+
+
+/* Tablets */
+@media (min-width: 720px) and (max-width: 1020px) {
+    body {
+        margin: 20px;
+        font-family: "Comic Sans MS", cursive;
+    }
+
+    .contenido img {
+        max-width: 80px;
+        margin: 10px 0;
+        margin-left: 150px;
+    }
+
+    .contenido .texto h1 {
+        font-size: 32px;
+    }
+
+    .contenedor-padre-links {
+        margin: 0;
+    }
+
+    .contenedor-padre-links .containerlinks {
+        max-width: 100%;
+        margin: 10px ;
+    }
+
+    .contenedor-padre-links .containerlinks p {
+        text-align: left;
+    }
+
+    .contenedorInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        margin-bottom: 10px;
+        max-width: none;
+        order: 1;
+    }
+
+    .contenedorInfo h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .info-mi, .suscribete {
+        flex: 1;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .info-mi p, .suscribete input[type="text"] {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .suscribete button {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .contenedor-padre {
+        flex-direction: column;
+        margin: 10px;
+        padding: 20px;
+        justify-content: space-between; /* Espacio entre los contenedores */
+
+    }
+
+    .contenedor-izquierda, .contenedor-centro, .contenedor-derecha {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .pagina1-contenedor, .pagina2-contenedor, .pagina3-contenedor, .conocimientos-container {
+        margin: 10px;
+        padding: 20px;
+
+    }
+}
+
+
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 720px) {
+    /* Estilos para el contenedor principal */
+    .contenido {
+        display: flex;
+        flex-direction: column; /* Dirección de columna para apilar elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Centra el texto horizontalmente */
+    }
+    
+    /* Estilos para el texto */
+    .contenido .texto {
+        margin: 10px; /* Margen alrededor del texto */
+        order: 1; /* Cambia el orden del texto para que aparezca después de la imagen */
+    }
+    
+    .contenido .texto h1 {
+        font-size: 30px;
+        white-space: nowrap; /* Evita el salto de línea */
+        overflow: hidden; /* Oculta el exceso de texto */
+        text-overflow: ellipsis; /* Agrega puntos suspensivos (...) cuando el texto es demasiado largo */
+    }
+    
+    /* Estilos para la imagen */
+    .contenido img {
+        max-width: 80px; /* Ajusta el ancho máximo de la imagen */
+        margin: 10px auto; /* Centra la imagen horizontalmente con margen superior e inferior */
+        display: block; /* Evita espacios adicionales debajo de la imagen */
+        order: 2; /* Cambia el orden de la imagen para que aparezca antes del texto */
+    }
+    
+    
+        .contenedor-padre-links {
+            margin: 0;
+        }
+    
+        .contenedor-padre-links .containerlinks {
+            max-width: 100%;
+            margin: 10px 0;
+        }
+    
+        .contenedor-padre-links .containerlinks p {
+            text-align: left;
+        }
+    
+        .contenedorInfo {
+            position: static;
+            margin: 20px auto;
+            max-width: none;
+            order: 1;
+        }
+    
+        .info-mi {
+            margin-top: 20px;
+            text-align: left;
+        }
+    
+        .suscribete input[type="text"] {
+            width: 100%;
+        }
+    
+        .contenedor-padre {
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        .contenedor-izquierda, .contenedor-centro, .contenedor-derecha {
+            flex: 1;
+            padding: 10px;
+        }
+    
+        .pagina1-contenedor, .pagina2-contenedor, .pagina3-contenedor, .conocimientos-container {
+            margin: 0;
+            padding: 20px;
+        }
+    }
+    
