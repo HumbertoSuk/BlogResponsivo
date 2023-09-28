@@ -11,7 +11,10 @@ La página web personal se ha creado utilizando HTML y CSS para definir la estru
 ## Como instalar y usar
 
 1- Clona este repositorio en tu máquina local.
+
 2- Abre el archivo index.html en tu navegador web.
+
 3- Explora la página web y navega por las diferentes secciones.
+
 4- Si deseas personalizar la página, puedes editar el archivo CSS (styles.css) para cambiar los estilos y contenido según tus preferencias.
 
